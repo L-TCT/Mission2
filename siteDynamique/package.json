@@ -1,0 +1,14 @@
+{
+  "name": "sitedynamique",
+  "version": "1.0.0",
+  "description": "Bienvenue sur notre partie site dynamique, je vais vous expliquer comment faire fonctionner le site avec la bdd sur votre ordinateur !",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "spin.js": "^4.1.0"
+  }
+}

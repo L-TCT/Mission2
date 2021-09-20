@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const url = "api.php";
+        const requestOptions = {
+            method: "POST",
+            body: JSON.stringify({ 
+                username: "Alex",
+                password: "myPassworde"
+            }),
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            })
+        }
+        fetch(url, requestOptions)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+                console.log(data);
+                if(data.success){
+                    // Logged in
+                    window.location = "mainIntranet.php";
+                }else{
+                    // Errors
+                    // => display errors in modal
+                }
+            });
+    </script>
+</body>
+</html>
